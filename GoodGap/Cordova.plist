@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TopActivityIndicator</key>
+	<string>gray</string>
+	<key>EnableLocation</key>
+	<false/>
+	<key>EnableViewportScale</key>
+	<false/>
+	<key>AutoHideSplashScreen</key>
+	<true/>
+	<key>ShowSplashScreenSpinner</key>
+	<true/>
+	<key>MediaPlaybackRequiresUserAction</key>
+	<false/>
+	<key>AllowInlineMediaPlayback</key>
+	<false/>
+	<key>OpenAllWhitelistURLsInWebView</key>
+	<false/>
+	<key>ExternalHosts</key>
+	<array/>
+	<key>Plugins</key>
+	<dict>
+		<key>com.cordova.accelerometer</key>
+		<string>CDVAccelerometer</string>
+		<key>com.cordova.camera</key>
+		<string>CDVCamera</string>
+		<key>com.cordova.connection</key>
+		<string>CDVConnection</string>
+		<key>com.cordova.contacts</key>
+		<string>CDVContacts</string>
+		<key>com.cordova.debugconsole</key>
+		<string>CDVDebugConsole</string>
+		<key>com.cordova.file</key>
+		<string>CDVFile</string>
+		<key>com.cordova.filetransfer</key>
+		<string>CDVFileTransfer</string>
+		<key>com.cordova.geolocation</key>
+		<string>CDVLocation</string>
+		<key>com.cordova.notification</key>
+		<string>CDVNotification</string>
+		<key>com.cordova.media</key>
+		<string>CDVSound</string>
+		<key>com.cordova.mediacapture</key>
+		<string>CDVCapture</string>
+		<key>com.cordova.splashscreen</key>
+		<string>CDVSplashScreen</string>
+	</dict>
+</dict>
+</plist>
