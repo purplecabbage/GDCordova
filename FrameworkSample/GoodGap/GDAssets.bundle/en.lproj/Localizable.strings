@@ -1,0 +1,422 @@
+/* 
+ * Copyright (c) Visto Corporation dba Good Technology, 2011. All rights reserved.
+ */
+
+/* Localizable strings within the Good Dynamics client library user interface.
+ * The order of strings in this file is based on the order in which they would
+ * normally be encountered during set-up, and then on the order in which they 
+ * appear on the screen, from top to bottom.
+ */
+
+/* Welcome UI strings, for the first page that is displayed, before set-up. */
+
+/* Welcome UI : Navigation Title
+ * Also appears in the following:
+ * Provision UI : Navigation Title
+ * Provision Progress UI : Navigation Title
+ */
+"Setup" = "Set-up";
+
+/* Welcome UI : Next button label text */
+"Start" = "Set up";
+
+/* Welcome UI : Welcome Message
+ * In the following, WiFi should be Wi-Fi with a hyphen, but the UI will 
+ * break the line at the hyphen, which looks bad.
+ * IT admin should be IT administrator, but administrator is a long word and 
+ * causes an odd line break.
+ */
+"Welcome to Good Dynamics" =
+"Welcome to Good Dynamics!
+
+You will need mobile data or WiFi coverage throughout the set-up process.
+You will need your email address, and the access key in the welcome message from your IT admin.";
+
+/* Provision UI strings, for the page on which the user enters their 
+ * e-mail address and activation key (aka PIN).
+ */
+
+/* Provision UI : Left button label text
+ * Also appears in the following:
+ * Set Password UI : Left button label text
+ */
+"Cancel" = "Cancel";
+
+/* Provision UI : Right button label text */
+"Next" = "Next";
+
+/* Company Name - Good Technology */
+"Good Technology" = "Good Technology";
+
+/* Provision UI : Email Label text */
+"Email Address" = "Email Address";
+
+/* Provision UI : PIN Label text */
+"PIN" = "Access Key";
+
+/* Provision UI : Error Message - Invalid PIN */
+"Invalid PIN" = "Invalid Access Key";
+
+/* Provision UI : Error Message - No Coverage */
+"Network Required" =
+"Mobile data or Wi-Fi coverage is required for the set-up process.
+\nPlease try again when a data connection is available.";
+
+/* Provision UI : Title */
+"Set-up failed" = "Set-up Failed";
+
+/* Provision Progress UI strings, for the page that is displayed during
+ * authorization processing.
+ */
+
+
+/* Provision Progress UI : Left button label text */
+"Back" = "Back";
+
+/* Provision Progress UI : Set Up Progress Label */
+"Setup Progress" = "Progress";
+
+/* Provision Progress UI : Status Label text */
+"Status" = "Status";
+
+/* Provision Progress UI : State - Init
+ * In this state:
+ * Post to the GD NOC activation service
+ * Establish Push Connection
+ */
+"NOC Activation" = "Infrastructure Activation";
+
+/* Provision Progress UI : State - NOC
+ * In this state:
+ * Post e-mail address and access key to the NOC
+ * NOC checks validity
+ * Returns: Various server addresses
+ */
+"NOC Provisioning" = "Enterprise Activation";
+
+/* Provision Progress UI : State - Push Channel
+ * In this state:
+ * Initial Push Channel is established
+ */
+"Starting Push Channel" = "Connecting Push Channel";
+
+/* Provision Progress UI : State - Negotiate
+ * In this state:
+ * Secure communications set-up, part one
+ */
+"Negotiating Request" = "Securing Communications";
+
+/* Provision Progress UI : State - Data Request
+ * In this state:
+ * Secure communications set-up, part two
+ */
+"Data Request" = "Communications Secured";
+
+/* Provision Progress UI : State - Downloading Policies
+ * In this state:
+ * Retrieve policies from enterprise GC
+ */
+"Downloading Policies" = "Retrieving Policies";
+
+/* Provision Progress UI : State - Policy Download Complete */
+"Policy Download Complete" = "Policies Retrieved";
+
+/* Provision Progress UI : State - Provision Complete */
+"Provisioning Complete" = "Enterprise Activation Done";
+
+/* Provision Progress UI : State - Waiting */
+"Waiting..." = "Waiting...";
+
+/* Provision Progress UI : State - Checking Permission */
+"Checking Permission" = "Checking Entitlement";
+
+/* Provision Progress UI : State - Checking Permission Complete */
+"Permission Verified" = "Entitlement Verified";
+
+/* Provision Progress UI : Provision Fail Message */
+"Provisioning with enterprise failed" = "Application set-up failed";
+
+/* Provision Progress UI : Provision Access Denied Message
+ * IT admin should be IT administrator, but administrator is a long word and 
+ * causes an odd line break.
+ */
+"Provisioning Denied" = 
+"The Email Address and Access Key were not recognized.\n
+Please check that the values entered are correct and have not expired. If the problem persists, obtain a new Access Key by self-service or from your IT admin.";
+
+/* Provision Progress UI : Send Log */
+"Send Log" = "Send Log";
+
+/* Provision Progress UI : Retry */
+"Retry" = "Retry";
+
+/* Set Password UI strings, for the screen on which the user sets their
+ * security password. The password must comply with the provisioning 
+ * enterprise's security policies.
+ * The Set Password screen can appear in two contexts:
+ * Immediately after set-up has completed and the user sets their password for 
+ * the first time, and
+ * As part of the preferences user interface, where the user can change their
+ * password.
+ */
+
+/* Set Password UI : Navigation Title - Set Password
+ * For use when the screen appears as part of the set-up UI
+ */
+"Set Password" = "Set Password";
+
+/* Set Password UI : Navigation Title - Change Password
+ * For use when the screen appears as part of the GD Settings UI
+ */
+"Change Password" = "Change Password";
+
+/* Set Password UI : Right button label text */
+"Done" = "Done";
+
+/* Set Password UI : Label text for setting password. */
+"You are required to set a password." = "You are required to set a password.";
+
+/* Set Password UI : Placeholder text string for confirm password textfield */
+"Confirm New Password" = "Confirm New Password";
+
+/* The following strings are used to present the rules that will apply to the 
+ * user's password.
+ */
+
+/* Set Password UI : Password Guide Preface 
+ * The following appears above the rules statements.
+ */
+"Your password must include:\n" = "Your password must have:\n";
+
+/* Set Password UI : Password Guide - Repeat
+ * Note. The relative positions of repeated characters does not affect this
+ * policy. In other words the repeated characters could be adjacent or not
+ * adjacent.
+ */
+"- Disallow %d or more repeated characters\n" = "- No more than %d of any character\n";
+
+/* Set Password UI : Password Guide - Sequential Number
+ * Note: There is no policy against sequential letters, for example: abcdef
+ */
+"- Do not allow sequential numbers\n" = "- No sequential numbers (ex. 123 or 321)\n";
+
+/* Set Password UI : Password Guide - Personal Information
+ */
+"- Do not allow personal information\n" = "- No personal information\n";
+
+/* Set Password UI : Password Guide - Length */
+"- Require at least %d characters\n" = "- At least %d characters\n";
+
+/* Set Password UI : Password Guide - Special Character
+ * Note: Here, a special character is one that returns non-zero when passed to a
+ * standard ispunct() function. See the following page for a definition:
+ * http://pubs.opengroup.org/onlinepubs/000095399/basedefs/xbd_chap07.html
+ */
+"- Require at least one special character\n" = "- Not only letters and numbers\n";
+
+/* Set Password UI : Password Guide - Number */
+"- Require both letters and numbers\n" = "- Both letters and numbers\n";
+
+/* Set Password UI : Password Guide - Uppercase */
+"- Require both upper and lower case\n" = "- Both upper- and lower-case letters\n";
+
+/* End of password rules */
+
+/* Set Password UI : Placeholder text string for new password textfield */
+"New Password" = "New Password";
+
+/* Set Password UI : Placeholder text string for old password textfield */
+"Old Password" = "Old Password";
+
+/* The following are error messages for use when the password that the user
+ * entered does not comply with security policy. These are displayed on a
+ * dialog over the screen on which the user has attempted to enter the password.
+ * The title of the dialog is always "Error" or its localization.
+ */
+
+/* Set Password UI : Error Message - Password Change Failure 
+ * This error is displayed if the old password was incorrect.
+ */
+"New password cannot be changed" = "Password cannot be changed. Please try again.";
+
+/* Set Password UI : Error Message - Password Change Failure History */
+"Your password cannot be set to one used previously." = "Password used previously.";
+
+/* Set Password UI : Error Message - Password Change Failure Too Soon */
+"Your password cannot be changed twice in the same day." = "Password already changed today.";
+
+/* Set Password UI : Error Message - Sequential Numbers */
+"No number sequence allowed (eg.123 or 321)" = "Password contains sequential numbers (ex: 123 or 321).";
+
+/* Set Password UI : Error Message - Personal Information */
+"Password cannot have personal information" = "Password contains personal information";
+
+/* Set Password UI : Error Message - General Error */
+"Password is not strong enough." = "Password is not strong enough.";
+
+/* Set Password UI : Error Message - Short Password */
+"Password is too short." = "Password is too short.";
+
+/* Set Password UI : Error Message - Letters and Numbers */
+"Password must have both letters and numbers" = "Password does not contain both letters and numbers.";
+
+/* Set Password UI : Error Message - Upper Case */
+"Password must have upper and lower case letters" = "Password does not contain upper- and lower-case letters.";
+
+/* Set Password UI : Error Message - Numeric Character */
+"There is no numeric character in password." = "Password does not contain any numbers.";
+
+/* Set Password UI : Error Message - Special Character */
+"There is no special character (@, #, $) in password." = "Password contains only letters and numbers.";
+
+/* Set Password UI : Error Message - No Uppercase */
+"There is no uppercase character in password." = "Password contains no upper-case characters.";
+
+/* Set Password UI : Error Message - Repeated Characters */
+"Too many repeated characters" = "Password contains too many repeated characters.";
+
+/* Set Password UI : Error Message - Not Matched */
+"Two passwords do not match" = "The two passwords do not match.  Please try again.";
+
+/* End of password compliance error messages */
+
+/* Set Password UI : Error Message - Password Set Failure */
+"New password cannot be set" = "New password cannot be set.";
+
+/* Set Password UI : Error Message - Empty Password */
+"Empty password is not allowed." = "Password is blank.";
+
+/* Block UI : Navigation Title */
+"Blocked" = "Application Blocked";
+
+/* Block UI : Description
+ * In principle, this is always blocked due to policy violation. In actuality,
+ * there are two scenarios in which a policy block could be put in place.
+ * Something may have happened on the device that makes it non-compliant.
+ * Also possible is that a policy update has taken place and the device is not
+ * compliant with the new policy, but was compliant with the old policy.
+ */
+"Application access blocked" = "Access to this application has been blocked.";
+
+/* Device Wipe UI : Navigation Title */
+"Invalid Device" = "Application Access Denied";
+
+/* Device Wipe UI : Description */
+"Your device has been wiped!" = "This application has been wiped.  Please contact your IT administrator if you require access again.";
+
+/* InterApp Lock UI : Navigation Title */
+"Access Blocked" = "Access Blocked";
+
+/* InterApp Lock UI : Description */
+"The authorization application is not installed." = "The authorization application is not installed.";
+
+/* Remote Lock UI : Navigation Title */
+"Remote Lock" = "Application Remote Locked";
+
+/* Remote Lock UI : Right button label text
+ Unlock UI : Right button label text */
+"Unlock" = "Unlock";
+
+/* Remote Lock UI : Help Message */
+"Contact your IT administrator with the following case sensitive unlock-code to get the temporary unlock password." = "Contact your IT administrator with the following unlock code to get a temporary password to unlock this application.";
+
+/* Remote Lock UI : Error alertview message
+ Unlock UI : Error alertview message */
+"Incorrect Password" = "Incorrect Password";
+
+/* Unlock UI : Incorrect Password with max */
+"The password you entered is not correct. You have %d attempts remaining." = 
+"The password you entered is not correct. You have %d attempts remaining.";
+
+/* Unlock UI : Incorrect Password */
+"The password you entered is not correct." = 
+"The password you entered is not correct.";
+
+/* Unlock UI : Navigation Title */
+"Login" = "Login";
+
+/* Unlock UI : Placeholder text string for password textfield */
+"Password" = "Password";
+
+/* Unlock UI : Label text for entering regular password */
+"Enter Password" = "Enter Password";
+
+/* Unlock UI : Label text for entering PIN as password */
+"Enter PIN" = "Enter Access Key";
+
+/* Error Alert View : Title */
+"Error" = "Error";
+
+/* Error Alert View : Button label */
+"OK" = "OK";
+
+/* App Denied! : Description */
+"App Denied!" = "Application not authorised.\n%@ v%@\nContact your IT administrator.";
+
+/* Device WipeUI: Description Mobile Docs*/
+"Wiped key changed" = "The authorization application failed. Any data stored in this application has been wiped. Terminate and restart this application to try again.";
+
+/* GDiOS Event : App Permission Failed */
+"Error application not allowed for user" = "Error application not allowed for user";
+
+/* GDiOS Event : Activation Failed */
+"Error device activation failed" = "Error device activation failed";
+
+/* GDiOS Event : Provisioning Failed */
+"Error provisioning with enterprise failed" = "Error provisioning with enterprise failed";
+
+/* GDiOS Event : Push Connection Failed */
+"Error push connection failed to open" = "Error push connection failed to open";
+
+/* GDiOS Event : Security Failed */
+"Error unlocking secure container" = "Error unlocking secure container";
+
+/* GDiOS Event : Provision Cancelled */
+"Error user cancelled provisioning" = "Start-up error user cancelled provisioning";
+
+/* GDiOS Event : OK */
+"Authorization OK" = "Authorization OK";
+
+/* GDiOS Event : Application Blocked */
+"Application access has been blocked" = "Application access has been blocked";
+
+/* GDiOS Event : Application Wiped */
+"Application has been wiped" = "Application has been wiped";
+
+/* GDiOS Event : Application Idle Lockout */
+"Application idle timeout activated" = "Application idle timeout activated";
+
+/* GDiOS Event : Application Remote Locked */
+"Application has been remote locked" = "Application has been remote locked";
+
+/* GDiOS Event: Password Change Required */
+"Password Change Required" = "Password Change Required";
+
+/* [Simulated] : Simulated Title Append 
+ * Displayed when the application is running in Enterprise Simulation mode
+ */
+"[Simulated]" = "[Simulated]";
+
+/* Unlock UI : Label text for forgot password */
+"Password Lost" = "Password Lost";
+
+/* Confirm Alert View : Title */
+"Lock For Reset?" = "Lock For Reset?";
+
+/* Confirm Alert View : Message */
+"Password reset requires a special code from your IT administrator. The application will be locked as soon as reset is requested." = "Password reset requires a special code from your IT administrator. The application will be locked as soon as reset is requested.";
+
+/* Unlock UI : Keyboard Guide */
+"Touch 'Next' to unlock." = "Touch 'Next' to unlock.";
+
+/* Remote Lock UI : Description */
+"Contact your IT administrator with the above unlock code to get a temporary password to unlock this application." = "Contact your IT administrator with the above unlock code to get a temporary password to unlock this application.";
+
+/* Provision UI : Provision Help Title */
+"An access key should have been sent to you in an e-mail like the following:" = "An access key should have been sent to you in an e-mail like the following:";
+
+/* Help UI : access key help message */
+"Access key help message" = "<br><style>DIV.PlainText { font-size:100%%;font-family:monospace;background-color:#ffffff;color:#000000}</style>%@<br><br><font size=\"2\"><div class=\"PlainText\">Dear <font color=808080><i>Your Name</i></font>,<br><br>You have been given access to ... <br><br>&nbsp;&nbsp; 1. Download the required application ...<br>&nbsp;&nbsp; 3. Enter the following information when prompted (not case sensitive):<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EMAIL ADDRESS:&nbsp; <span style=\"background:yellow;color:808080\"><i>email@company.com</i></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ACCESS KEY: <span style=\"background:yellow;color:808080\"><i>xxxxx-xxxxx-xxxxx</i></span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Access Key expires: <font color=808080><i>expiration date</i></font><br><br>&nbsp;&nbsp; 4. If required by IT security policy, ...<br></div></font>";
+
+
+
